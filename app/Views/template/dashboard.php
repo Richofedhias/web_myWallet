@@ -196,7 +196,7 @@
             </div>
           </div>
         </div>
-        
+
         <!--Income & Spending-->
         <div class="incomeSpending">
           <div class="incomeRecord">
@@ -204,17 +204,19 @@
             <p> Showing your latest income activity</p>
             <p style="text-align: right; padding-right: 50px"><a href="<?= base_url('/PemasukandanPengeluaran/dashboardincomespending'); ?>">See More</a></p>
             <div class="isiIncome">
-              <?php foreach ($pemasukan as $pemasukan) : ?>
-              <table style="width: 100%;">
+              <?php
+              foreach ($pemasukan as $pemasukan) :
+              ?>
+                <table style="width: 100%;">
                   <tr>
                     <td rowspan="2" style="width: 30px">
                       <img src="/assets\img\dasboard\raise.png" style="margin-right: 15px">
                     </td>
                     <td>
-                    <?= $pemasukan['detail_pemasukan']; ?>
+                      <?= $pemasukan['detail_pemasukan']; ?>
                     </td>
                     <td style="text-align: right;">
-                    <?= $pemasukan['tanggal_pemasukan']; ?>
+                      <?= $pemasukan['tanggal_pemasukan']; ?>
                     </td>
                   </tr>
                   <tr>
@@ -222,9 +224,9 @@
                       <h3 style="font-family: 'lato'"><strong>Rp <?= $pemasukan['nominal_pemasukan']; ?></strong></h3>
                     </td>
                   </tr>
-                </table> 
+                </table>
                 <br>
-                <?php endforeach; ?>
+              <?php endforeach; ?>
               <br>
 
             </div>
@@ -235,17 +237,17 @@
             <p> Showing your latest spending activity</p>
             <p style="text-align: right; padding-right: 50px"><a href="<?= base_url('/PemasukandanPengeluaran/dashboardincomespending'); ?>">See More</a></p>
             <div class="isiSpending">
-            <?php foreach ($pengeluaran as $pengeluaran) : ?>
-            <table style="width: 100%;">
+              <?php foreach ($pengeluaran as $pengeluaran) : ?>
+                <table style="width: 100%;">
                   <tr>
                     <td rowspan="2" style="width: 30px">
                       <img src="/assets\img\dasboard\indikator.png" style="margin-right: 15px">
                     </td>
                     <td>
-                    <?= $pengeluaran['detail_pengeluaran']; ?>
+                      <?= $pengeluaran['detail_pengeluaran']; ?>
                     </td>
                     <td style="text-align: right;">
-                    <?= $pengeluaran['tanggal_pengeluaran']; ?>
+                      <?= $pengeluaran['tanggal_pengeluaran']; ?>
                     </td>
                   </tr>
                   <tr>
@@ -268,15 +270,15 @@
             <p> Showing your lates saving activity, from how much money and date your activities.</p>
             <p style="text-align: right; padding-right: 50px"><a href="<?= base_url('/TabungandanTarget/dashboardsaving'); ?>">See More</a></p>
             <div class="isiIncome">
-            <?php foreach ($tabungan as $tabungan) : ?>
-              <table style="width: 100%;">
-                <tr>
-                  <td style="font-weight: bolder; font-size: 30px">Rp. <?= $tabungan['nominal_tabungan']; ?></td>
-                  <td style="text-align: right;"><?= $tabungan['tanggal_tabungan']; ?></td>
-                </tr>
-              </table>
-              <br>
-              <?php endforeach; ?>              
+              <?php foreach ($tabungan as $tabungan) : ?>
+                <table style="width: 100%;">
+                  <tr>
+                    <td style="font-weight: bolder; font-size: 30px">Rp. <?= $tabungan['nominal_tabungan']; ?></td>
+                    <td style="text-align: right;"><?= $tabungan['tanggal_tabungan']; ?></td>
+                  </tr>
+                </table>
+                <br>
+              <?php endforeach; ?>
             </div>
           </div>
 
@@ -285,24 +287,24 @@
             <p> Showing your loaned money, it will show you who, how much, and when your money loaned</p>
             <p style="text-align: right; padding-right: 50px"><a href="<?= base_url('/Pinjaman/dashboardloan'); ?>">See More</a></p>
             <div class="isiSpending">
-            <?php foreach ($pinjaman as $pinjaman) : ?>
-              <table style="width: 100%;">
-                <tr>
-                  <td>
-                    <h5><?= $pinjaman['nama_peminjam']; ?><h5>
-                  </td>
-                  <td style="text-align: right;">
-                  <?= $pinjaman['tanggal_peminjaman']; ?>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="3">
-                    <h3 style="font-family: 'lato'"><strong>Rp30.000</strong></h3>
-                  </td>
-                </tr>
-              </table>
-              <br>
-              <?php endforeach; ?>               
+              <?php foreach ($pinjaman as $pinjaman) : ?>
+                <table style="width: 100%;">
+                  <tr>
+                    <td>
+                      <h5><?= $pinjaman['nama_peminjam']; ?><h5>
+                    </td>
+                    <td style="text-align: right;">
+                      <?= $pinjaman['tanggal_peminjaman']; ?>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <h3 style="font-family: 'lato'"><strong>Rp30.000</strong></h3>
+                    </td>
+                  </tr>
+                </table>
+                <br>
+              <?php endforeach; ?>
             </div>
           </div>
         </div>

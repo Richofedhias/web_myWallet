@@ -54,16 +54,18 @@ class c_Register extends BaseController
     public function auth()
     {
         $data = array('username' => $this->request->getVar('username'), 'password' => md5($this->request->getVar('password')));
-        $user =  $this->login->where($data);
-        $rows = $this->login->countAllResults();
+        $db = \Config\Database::connect();
+        $builder = $db->table('user')
+            ->where('username', $data['username'])
+            ->get()->getRowArray();
+        // dd($builder);
+        // $rows = $this->builder->countAllResults();
         $session = session();
-        if ($rows == 1) {
-            // return view('template/dashboard');
-            dd($user);
+        if ($builder) {
+
+            return redirect()->to(base_url('Home/dashboard'));
         } else {
             $session->setFlashdata('msg', 'Invalid User');
-            // return view('template/loginview');
-            dd($user);
         }
     }
 
