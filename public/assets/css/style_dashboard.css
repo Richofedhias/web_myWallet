@@ -1,0 +1,519 @@
+/**
+* Template Name: iPortfolio - v3.0.1
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+  /* background: url(assets\img\dasboard\wallet-backgrounddash.png); */
+  height: 100%;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0px;
+  background: #377E9A;
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
+  background-color: #269ECD;
+}
+
+#header .profile h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 a, #header .profile h1 a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #269ECD;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+#main {
+  margin-left: 300px;
+  padding-left: 5px;
+  /* background-color: #EEF2E2; */
+  
+  /* background: url(../img/dasboard/wallet-backgrounddash.png); */
+  background-size: cover;
+  height: 100%
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+    background-color: #EEF2E2;
+    background-size: cover;
+  }
+}
+
+.rupiah{
+  color: #247291; 
+  font-weight: bolder; 
+  display: inline-block;
+  padding-top: 10px;
+  font-family: 'lato', sans-serif;
+}
+
+.mainContainer{
+  /* background-color: red; */
+  height: 100%;
+  width: 100%;
+  background-color: #EEF2E2;
+  /* background: url(../img/dasboard/wallet-backgrounddash.png); */
+  background-size: contain;
+}
+
+.logo{
+  padding-left: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 40px */
+}
+
+
+.judul{
+  padding-left: 70px;
+  margin-right: 200px;
+  width: 60%
+}
+
+.spending{
+  padding-left: 40px;
+  padding-right: 40px;
+  border-right: 1px solid grey;
+  display: inline-block;
+}
+
+.spending img {
+  margin-bottom: 15px;
+  padding-right: 5px;
+}
+
+.saving img {
+  margin-bottom: 15px ;
+  padding-right: 5px;
+}
+
+.moneySection{
+  padding-top: 50px;
+  padding-left: 30px
+}
+
+.gambarSection{
+  margin: 40px;
+  margin-right: 20px;
+  float: left
+}
+
+.saving{
+  display: inline-block;
+  /* border-left: 1px solid grey; */
+  /* border-right: 1px solid grey; */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.income{
+  padding-left: 40px;
+  padding-right: 40px;  
+  border-left: 1px solid grey;
+  display: inline-block;
+}
+
+.profile {
+  background-color: #269ECD;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.activities{
+  background-color: white;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 70px;
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+.activities h2{
+  margin-left: 40px;
+}
+
+.activities p{
+  margin-left: 40px;
+}
+
+.activities .btn-statistik {
+  margin-top: 5px;
+  margin-left: 40px;
+  line-height: 0;
+  padding: 20px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #377E9A;
+  box-shadow: 0px 5px 5px rgba(65, 84, 241, 0.4);
+}
+
+.isiActivities{
+  width: 100%;
+  padding: 30px;
+  padding-top: 10px
+}
+
+.yourTarget{
+  background-color: white;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  margin-top: 70px;
+  margin-left: 100px;
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+.yourTarget h2{
+  margin-left: 40px;
+}
+
+.yourTarget p{
+  margin-left: 40px;
+}
+
+.isiYourTarget{
+  width: 100%;
+  padding: 30px;
+  padding-top: 0px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.isiYourTargetContainer{
+  height: 60%
+}
+
+.incomeSpending{
+  background-color: white;
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 50px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.loanSaving{
+  background-color: white;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 50px;
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.incomeRecord{
+  width: 50%;
+  padding-right: 50px;
+  padding-left: 50px;
+  /* padding-top: 20px;
+  padding-left:50px;
+  padding-right: 40px; */
+  margin-top: 50px;
+  border-right: 1px solid grey;
+  height: 85%;
+  /* display: inline-block; */
+  float: left;
+}
+
+.incomeRecord .btn-statistik{
+  margin-top: 5px;
+  line-height: 0;
+  padding: 20px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #377E9A;
+  box-shadow: 0px 5px 5px rgba(65, 84, 241, 0.4);
+}
+
+.incomeRecord p {
+  font-size: 1px;
+}
+
+.isiIncome{
+  padding-top: 40px;
+  padding-right: 30px
+}
+
+.spendingRecord{
+  display: inline-block;
+  width: 50%;
+  /* float: left; */
+  padding-right: 50px;
+  padding-left: 50px;
+  /* padding-top: 20px;
+  padding-left:50px;
+  padding-right: 60px; */
+  margin-top: 50px;
+  height: 85%;
+}
+
+.spendingRecord .btn-statistik{
+  margin-top: 5px;
+  line-height: 0;
+  padding: 20px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #377E9A;
+  box-shadow: 0px 5px 5px rgba(65, 84, 241, 0.4);
+}
+
+.isiSpending{
+  padding-top: 40px;
+  padding-right: 30px
+}
+
+#main h1 {
+  color: #247291;
+  font-weight: bolder; 
+  font-size: 32px;
+
+}
+
+#main h2 {
+  color: #247291;
+  font-weight: bolder; 
+  font-size: 24px;
+
+}
+
+#main h3 {
+  color:black;
+  font-weight: bolder; 
+  font-size: 20px;
+
+}
+
+#main p {
+  font-size: 16px; 
+}
+
+#main .moneySection p {
+  margin-bottom: -5px;
+}
+
+.loaned{
+  background-color: white;
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 70px;
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.loanedRecord{
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  /* padding-top: 20px;
+  padding-left:50px;
+  padding-right: 40px; */
+  margin-top: 50px;
+  /* border-right: 1px solid grey; */
+  height: 85%;
+  /* display: inline-block; */
+  float: left;
+}
+
+#isiLoaned{
+  padding-top: 40px;
+  padding-right: 30px
+}
+
+#isiLoaned p{
+  font-size: 12px;
+}
+
+#isiLoaned h4{
+  font-size: 15px;
+}
+
+.judul .btn-statistik{
+  margin-top: 5px;
+  line-height: 0;
+  padding: 20px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #377E9A;
+  box-shadow: 0px 5px 5px rgba(65, 84, 241, 0.4);
+}
+
+.incomeRecord p {
+  font-size: 1px;
+}
+
+.isiIncome{
+  padding-top: 40px;
+  padding-right: 30px
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 12px 15px;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i {
+  margin-left: 30px;
+  font-size: 24px;
+  padding-right: 8px;
+  color: white;
+}
+
+
+.nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
+  text-decoration: none;
+  color: white;
+  background-color: #269ECD;
+  border-radius: 15px;
+  margin-left: 40px;
+}
+
+.nav-menu a:hover i, .nav-menu .active i, .nav-menu li:hover > a i {
+  color: white;
+  border-radius: 15px;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
